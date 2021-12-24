@@ -5,11 +5,11 @@
 - 内置**Dler**配置**openclash.yaml**
 - 替换配置订约地址里面的**Token**
 
-[mosdns01]:/jpg/mosdns01.jpg "mosdns01"
-[mosdns02]:/jpg/mosdns02.jpg "mosdns02"
-[openclash01]:/jpg/openclash01.jpg "openclash01"
-[openclash02]:/jpg/openclash02.jpg "openclash02"
-[openclash03]:/jpg/openclash03.jpg "openclash03"
+[mosdns01]:/.jpg/mosdns01.jpg "mosdns01"
+[mosdns02]:/.jpg/mosdns02.jpg "mosdns02"
+[openclash01]:/.jpg/openclash01.jpg "openclash01"
+[openclash02]:/.jpg/openclash02.jpg "openclash02"
+[openclash03]:/.jpg/openclash03.jpg "openclash03"
 
 
 
