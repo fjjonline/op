@@ -5,6 +5,12 @@
 - 内置**Dler**配置**openclash.yaml**
 - 替换配置订约地址里面的**Token**
 
+
+**Openwrt**固件下载地址！
+
+- [**Openwrt** **X86**固件下载地址！](https://github.com/fjjonline/op/releases/tag/x86)
+- [**Openwrt** **R4S**固件下载地址！](https://github.com/fjjonline/op/releases/tag/r4s)
+
 [mosdns01]:/.jpg/mosdns01.jpg "mosdns01"
 [mosdns02]:/.jpg/mosdns02.jpg "mosdns02"
 [openclash01]:/.jpg/openclash01.jpg "openclash01"
