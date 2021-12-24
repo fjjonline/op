@@ -1,4 +1,4 @@
-**Openwrt**固件定制 不定时更新！
+## **Openwrt**固件定制 不定时更新！
 - 默认登陆IP **192.168.1.1** 
 - 默认密码 **password**  
 - 主要定制**Mosdns+OpenClash** 
@@ -6,7 +6,7 @@
 - 替换配置订约地址里面的**Token**
 
 
-**Openwrt**固件下载地址:
+## **Openwrt**固件下载地址:
 - [**X86**固件下载地址！](https://github.com/fjjonline/op/releases/tag/x86)
 - [**R4S**固件下载地址！](https://github.com/fjjonline/op/releases/tag/r4s)
 
@@ -18,12 +18,12 @@
 
 
 
-**Mosdns**设置
+## **Mosdns**设置
 ![mosdns][mosdns02]	
 ***
 ![mosdns][mosdns01]	
 
-**OpenClash**设置
+## **OpenClash**设置
 ![openclash][openclash01]	
 ***
 ![openclash][openclash02]	
