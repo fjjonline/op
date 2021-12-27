@@ -7,8 +7,7 @@
 
 
 ## **Openwrt**固件下载地址:
-- [**X86**固件下载地址！](https://github.com/fjjonline/op/releases/tag/x86)
-- [**R4S**固件下载地址！](https://github.com/fjjonline/op/releases/tag/r4s)
+- [**固件下载**！](https://github.com/fjjonline/op/releases/)
 
 [mosdns01]:/.jpg/mosdns01.jpg "mosdns01"
 [mosdns02]:/.jpg/mosdns02.jpg "mosdns02"
