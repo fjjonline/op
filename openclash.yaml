@@ -1,7 +1,7 @@
 ---
 # 以下就是代理，代理集（需机场支持），策略组设置。请自己观察，注意之间的对应关系!
 # 代理集设置  
-proxy-providers:
+proxy-providers:                                
   "🇭🇰 香港 HA-HC":
     type: http
     path: ./NTT-HK.yaml
@@ -11,10 +11,10 @@ proxy-providers:
       enable: true
       url: http://cp.cloudflare.com/generate_204
       interval: 300
-  "🇭🇰 香港 AIA":
+  "🇭🇰 香港 HKT":
     type: http
-    path: ./AIA-HK.yaml
-    url: https://dler.cloud/subscribe/token?protocols=ss&list=clash&area=hk&match=AIA
+    path: ./HKT-HK.yaml
+    url: https://dler.cloud/subscribe/token?protocols=ss&list=clash&area=hk&match=HKT
     interval: 28800
     health-check:
       enable: true
@@ -29,6 +29,15 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 600
+  "🇭🇰 香港 BGP":
+    type: http
+    path: ./IEPL-HK.yaml
+    url: https://dler.cloud/subscribe/token?protocols=ss&list=clash&area=hk&match=BGP
+    interval: 28800
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 600      
   "🇨🇳 台湾 CHT":
     type: http
     path: ./CHT-TW.yaml
@@ -40,8 +49,8 @@ proxy-providers:
       interval: 600    
   "🇸🇬 新加坡 SG":
     type: http
-    path: ./NTT-SG.yaml
-    url: https://dler.cloud/subscribe/token?protocols=ss&list=clash&area=sg&match=AIA|IEPL|aliyun|HC
+    path: ./HC-SG.yaml
+    url: https://dler.cloud/subscribe/token?protocols=ss&list=clash&area=sg&match=IEPL|HC
     interval: 28800
     health-check:
       enable: true
@@ -59,16 +68,16 @@ proxy-providers:
   "🇺🇸 美国 GIA":
     type: http
     path: ./GIA-MG.yaml
-    url: https://dler.cloud/subscribe/token?protocols=ss&list=clash&area=us&match=GIA|AIA
+    url: https://dler.cloud/subscribe/token?protocols=ss&list=clash&area=us&match=GIA
     interval: 28800
     health-check:
       enable: true
       url: http://cp.cloudflare.com/generate_204
       interval: 300      
-  "🇯🇵 日本 HC-AIA":
+  "🇯🇵 日本 HC":
     type: http
     path: ./HC-JP.yaml
-    url: https://dler.cloud/subscribe/token?protocols=ss&list=clash&area=jp&match=HC|AIA
+    url: https://dler.cloud/subscribe/token?protocols=ss&list=clash&area=jp&match=HC
     interval: 28800
     health-check:
       enable: true
@@ -81,13 +90,14 @@ proxy-groups:
   disable-udp: false
   proxies:
   - "🇸🇬 新加坡 SG"
-  - "🇭🇰 香港 AIA"
+  - "🇭🇰 香港 HKT"
   - "🇭🇰 香港 IEPL"
+  - "🇭🇰 香港 BGP"
   - "🇨🇳 台湾 CHT"
   - "🇭🇰 云连接 HC"
   - "🇭🇰 香港 HA-HC"
   - "🇺🇸 美国 GIA"
-  - "🇯🇵 日本 HC-AIA"
+  - "🇯🇵 日本 HC"
   - Select
 - name: Youtube
   type: select
@@ -96,24 +106,26 @@ proxy-groups:
   - "🇭🇰 香港 HA-HC"
   - "🇨🇳 台湾 CHT"
   - "🇭🇰 云连接 HC"
-  - "🇭🇰 香港 AIA"
+  - "🇭🇰 香港 HKT"
   - "🇭🇰 香港 IEPL"
+  - "🇭🇰 香港 BGP"
   - "🇸🇬 新加坡 SG"
   - "🇺🇸 美国 GIA"
-  - "🇯🇵 日本 HC-AIA"
+  - "🇯🇵 日本 HC"
   - Select
 - name: Netflix
   type: select
   disable-udp: false
   proxies:
+  - "🇭🇰 香港 BGP"
   - "🇨🇳 台湾 CHT"
   - "🇸🇬 新加坡 SG"
-  - "🇭🇰 香港 AIA"
+  - "🇭🇰 香港 HKT"
   - "🇭🇰 香港 IEPL"
   - "🇭🇰 云连接 HC"
   - "🇭🇰 香港 HA-HC"
   - "🇺🇸 美国 GIA"
-  - "🇯🇵 日本 HC-AIA"
+  - "🇯🇵 日本 HC"
   - Select
 - name: Disney
   type: select
@@ -121,38 +133,41 @@ proxy-groups:
   proxies:
   - "🇭🇰 云连接 HC"
   - "🇨🇳 台湾 CHT"
-  - "🇭🇰 香港 AIA"
+  - "🇭🇰 香港 HKT"
   - "🇭🇰 香港 IEPL"
+  - "🇭🇰 香港 BGP"
   - "🇸🇬 新加坡 SG"
   - "🇭🇰 香港 HA-HC"
   - "🇺🇸 美国 GIA"
-  - "🇯🇵 日本 HC-AIA"
+  - "🇯🇵 日本 HC" 
   - Select
 - name: HBO
   type: select
   disable-udp: false
   proxies:
-  - "🇭🇰 香港 AIA"
+  - "🇭🇰 香港 HKT"
   - "🇨🇳 台湾 CHT"
   - "🇭🇰 香港 IEPL"
+  - "🇭🇰 香港 BGP"
   - "🇸🇬 新加坡 SG"
   - "🇭🇰 云连接 HC"
   - "🇭🇰 香港 HA-HC"
   - "🇺🇸 美国 GIA"
-  - "🇯🇵 日本 HC-AIA"
+  - "🇯🇵 日本 HC" 
   - Select
 - name: GlobalTV
   type: select
   disable-udp: false
   proxies:
-  - "🇭🇰 香港 AIA"
+  - "🇭🇰 香港 HKT"
   - "🇨🇳 台湾 CHT"
   - "🇭🇰 香港 IEPL"
+  - "🇭🇰 香港 BGP"
   - "🇸🇬 新加坡 SG"
   - "🇭🇰 云连接 HC"
   - "🇭🇰 香港 HA-HC"
   - "🇺🇸 美国 GIA"
-  - "🇯🇵 日本 HC-AIA"
+  - "🇯🇵 日本 HC" 
   - Select
 - name: Proxy
   type: select
@@ -160,12 +175,13 @@ proxy-groups:
   proxies:
   - "🇸🇬 新加坡 SG"
   - "🇨🇳 台湾 CHT"
-  - "🇭🇰 香港 AIA"
+  - "🇭🇰 香港 HKT"
   - "🇭🇰 香港 IEPL"
+  - "🇭🇰 香港 BGP"
   - "🇭🇰 云连接 HC"
   - "🇭🇰 香港 HA-HC"
   - "🇺🇸 美国 GIA"
-  - "🇯🇵 日本 HC-AIA"
+  - "🇯🇵 日本 HC" 
   - DIRECT  
 - name: Bilibili
   type: select
@@ -241,27 +257,28 @@ proxy-groups:
   - Proxy
   - DIRECT
   use:  
-  - "🇭🇰 香港 AIA"
+  - "🇭🇰 香港 HKT"
   - "🇨🇳 台湾 CHT"
   - "🇭🇰 香港 IEPL"
+  - "🇭🇰 香港 BGP"
   - "🇸🇬 新加坡 SG"
   - "🇭🇰 云连接 HC"
   - "🇭🇰 香港 HA-HC"
   - "🇺🇸 美国 GIA"
-  - "🇯🇵 日本 HC-AIA"    
+  - "🇯🇵 日本 HC"    
 - name: Select
   type: select
   disable-udp: false
   use:
-  - "🇭🇰 香港 AIA"
+  - "🇭🇰 香港 HKT"
   - "🇨🇳 台湾 CHT"
   - "🇭🇰 香港 IEPL"
+  - "🇭🇰 香港 BGP"
   - "🇸🇬 新加坡 SG"
   - "🇭🇰 云连接 HC"
   - "🇭🇰 香港 HA-HC"
   - "🇺🇸 美国 GIA"
-  - "🇯🇵 日本 HC-AIA"
-
+  - "🇯🇵 日本 HC" 
 - name: "🇭🇰 香港 HA-HC"
   type: url-test
   use:
@@ -269,13 +286,20 @@ proxy-groups:
   url: http://cp.cloudflare.com/generate_204
   tolerance: 100
   interval: 300  
-- name: "🇭🇰 香港 AIA"
+- name: "🇭🇰 香港 HKT"
   type: url-test
   use:
-  - "🇭🇰 香港 AIA"
+  - "🇭🇰 香港 HKT"
   url: http://cp.cloudflare.com/generate_204
   tolerance: 100
   interval: 300
+- name: "🇭🇰 香港 BGP"
+  type: url-test
+  use:
+  - "🇭🇰 香港 BGP"
+  url: http://cp.cloudflare.com/generate_204
+  tolerance: 100
+  interval: 300  
 - name: "🇺🇸 美国 GIA"
   type: url-test
   use:
@@ -284,10 +308,10 @@ proxy-groups:
   olerance: 10
   interval: 300
   tolerance: 100  
-- name: "🇯🇵 日本 HC-AIA"
+- name: "🇯🇵 日本 HC" 
   type: url-test
   use:
-  - "🇯🇵 日本 HC-AIA"
+  - "🇯🇵 日本 HC" 
   url: http://cp.cloudflare.com/generate_204
   tolerance: 100
   interval: 300      
@@ -422,8 +446,7 @@ dns:
   - 127.0.0.1:5335
   enable: true
   ipv6: false
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  enhanced-mode: redir-host
   listen: 127.0.0.1:7874
   fake-ip-filter:
   - "*.lan"
