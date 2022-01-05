@@ -9,6 +9,11 @@
 ## **Openwrt**固件下载地址:
 - [**固件下载**！](https://github.com/fjjonline/op/releases/)
 
+
+## **OpenClash**配置更新命令:
+/etc/openclash/openclash_config.sh
+
+
 [mosdns01]:/.jpg/mosdns01.jpg "mosdns01"
 [mosdns02]:/.jpg/mosdns02.jpg "mosdns02"
 [openclash01]:/.jpg/openclash01.jpg "openclash01"
