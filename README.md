@@ -1,10 +1,10 @@
 ## **Openwrt**固件定制 不定时更新！
-- 默认登陆IP **192.168.1.1** 
-- 默认密码 **password**  
-- 主要定制**Mosdns+OpenClash** 
-- 内置**Dler**配置**openclash.yaml**
-- 替换配置订约地址里面的**Token**
-- x86固件：boot：256M ,root：512M
+- [x] 默认登陆IP **192.168.1.1** 
+- [x] 默认密码 **password**  
+- [x] 主要定制**Mosdns+OpenClash** 
+- [x] 内置**Dler**配置**openclash.yaml**
+- [x] 替换配置订约地址里面的**Token**
+- [x] x86固件：boot：256M ,root：512M
 
 ## **Openwrt**固件下载地址:
 - [**固件下载**！](https://github.com/fjjonline/op/releases/)
