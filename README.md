@@ -24,12 +24,12 @@
 
 
 
-- **Mosdns**设置
+## **Mosdns**设置
 ![mosdns][mosdns02]	
 ***
 ![mosdns][mosdns01]	
 
-- **OpenClash**设置
+## **OpenClash**设置
 ![openclash][openclash01]	
 ***
 ![openclash][openclash02]	
