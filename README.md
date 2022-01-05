@@ -6,7 +6,7 @@
 - [x] 替换配置订约地址里面的**Token**
 - [x] x86固件：boot：256M ,root：512M
 - [x] 内置功能 OpenClash MosDNS AdGuardHome Wireguard iPv6 Docker HelloWorld 
-- [x] 内置命令 iPerf3 Socat SpeedTest-Go Npc
+- [x] 内置命令 iPerf3 Socat SpeedTest-Go Npc Bmon
 
 ## **Openwrt**固件下载地址:
 - [**固件下载**！](https://github.com/fjjonline/op/releases/)
