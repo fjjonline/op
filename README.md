@@ -11,7 +11,9 @@
 
 
 ## **OpenClash**配置更新命令:
+```
 /etc/openclash/openclash_config.sh
+```
 
 
 [mosdns01]:/.jpg/mosdns01.jpg "mosdns01"
