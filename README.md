@@ -18,8 +18,8 @@
 ```
 
 
-[mosdns01]:/.jpg/mosdns01.jpg "mosdns01"
-[mosdns02]:/.jpg/mosdns02.jpg "mosdns02"
+[mosdns01]:/.jpg/mosdns03.jpg "mosdns01"
+[mosdns02]:/.jpg/mosdns04.jpg "mosdns02"
 [openclash01]:/.jpg/openclash01.jpg "openclash01"
 [openclash02]:/.jpg/openclash02.jpg "openclash02"
 [openclash03]:/.jpg/openclash03.jpg "openclash03"
