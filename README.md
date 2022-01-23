@@ -27,9 +27,9 @@
 
 
 ## **Mosdns**设置
-![mosdns][mosdns02]	
-***
 ![mosdns][mosdns01]	
+***
+![mosdns][mosdns02]	
 
 ## **OpenClash**设置
 ![openclash][openclash01]	
