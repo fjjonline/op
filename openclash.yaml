@@ -116,6 +116,7 @@ proxy-groups:
   type: select
   disable-udp: false
   proxies:
+  - Proxy
   - 🇭🇰 香港-IEPL
   - 🇭🇰 香港-AC
   - 🇨🇳 台湾-TW    
@@ -123,12 +124,12 @@ proxy-groups:
   - 🇯🇵 日本-JP
   - 🇺🇸 美国-US
   - 🚀 Select
-  - Proxy
   - DIRECT
 - name: Global TV
   type: select
   disable-udp: false
   proxies:
+  - Proxy
   - 🇭🇰 香港-IEPL
   - 🇭🇰 香港-AC
   - 🇨🇳 台湾-TW    
@@ -136,11 +137,11 @@ proxy-groups:
   - 🇯🇵 日本-JP
   - 🇺🇸 美国-US
   - 🚀 Select
-  - Proxy
   - DIRECT
 - name: Others
   type: select
   proxies:
+  - Proxy
   - 🇭🇰 香港-IEPL
   - 🇭🇰 香港-AC
   - 🇨🇳 台湾-TW    
@@ -148,13 +149,13 @@ proxy-groups:
   - 🇯🇵 日本-JP
   - 🇺🇸 美国-US
   - 🚀 Select
-  - Proxy
   - DIRECT
   - Domestic
 - name: Speedtest
   type: select
   disable-udp: false
   proxies:
+  - Proxy
   - 🇭🇰 香港-IEPL
   - 🇭🇰 香港-AC
   - 🇨🇳 台湾-TW    
@@ -162,7 +163,6 @@ proxy-groups:
   - 🇯🇵 日本-JP
   - 🇺🇸 美国-US
   - 🚀 Select
-  - Proxy
   - DIRECT
   - Domestic
 - name: Bahamut
