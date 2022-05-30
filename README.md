@@ -14,7 +14,7 @@
 
 ## **OpenClash**配置更新命令:
 ```
-bash <(wget -qO- https://github.cooluc.com/https://raw.githubusercontent.com/fjjonline/op/main/up_config.sh)
+ln -s /proc/self/fd /dev/fd &&bash <(wget -qO- https://github.cooluc.com/https://raw.githubusercontent.com/fjjonline/op/main/up_config.sh)
 ```
 
 
