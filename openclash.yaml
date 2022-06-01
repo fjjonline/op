@@ -190,6 +190,11 @@ proxy-groups:
   proxies:
   - DIRECT
   - Proxy
+- name: Douyin
+  type: select
+  proxies:
+  - DIRECT
+  - Proxy    
 - name: Domestic
   type: select
   proxies:
@@ -364,6 +369,7 @@ rules:
 - RULE-SET,ViuTV,Global TV
 
 - RULE-SET,Telegram,Telegram
+- RULE-SET,Douyin,Douyin
 - RULE-SET,Steam,Steam
 - RULE-SET,Speedtest,Speedtest
 - RULE-SET,PayPal,PayPal
@@ -768,6 +774,12 @@ rule-providers:
     url: https://dler.cloud/Rules/Clash/Provider/Telegram.yaml
     path: "./rule_provider/Telegram"
     interval: 86400
+  Douyin:
+    type: http
+    behavior: classical
+    url: https://dler.cloud/Rules/Clash/Provider/Douyin.yaml
+    path: ./rule_provider/Douyin
+    interval: 86400    
   Steam:
     type: http
     behavior: classical
@@ -879,6 +891,7 @@ script:
             "Soundcloud": "Global TV",
             "ViuTV": "Global TV",
             "Telegram": "Telegram",
+            "Douyin": "Douyin",           
             "Steam": "Steam",
             "Speedtest": "Speedtest",
             "PayPal": "PayPal",
