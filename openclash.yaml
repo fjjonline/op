@@ -12,7 +12,7 @@ proxy-providers:
   🇭🇰 香港-AC:
     type: http
     path: "./proxy_provider/AC-HK.yaml"
-    url: https://dler.cloud/subscribe/token?protocols=ss&list=clash&area=hk&match=AC
+    url: https://dler.cloud/subscribe/token?protocols=ss&list=clash&area=hk&match=AC&hijack=true
     interval: 28800
     health-check:
       enable: true
