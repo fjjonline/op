@@ -4,7 +4,7 @@
 - [x] 主要定制**Mosdns+OpenClash** 
 - [x] 内置**Dler**配置**openclash.yaml**
 - [x] 替换配置订约地址里面的**Token**
-- [x] x86固件：boot：256M ,root：512M
+- [x] x86固件：boot：256M ,root：500M
 - [x] 内置功能 OpenClash MosDNS Wireguard Docker PassWall 
 - [x] 内置命令 iPerf3 Socat SpeedTest-Go Npc Bmon Udpxy Gost Tailscale
 
